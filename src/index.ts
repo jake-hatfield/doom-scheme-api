@@ -1,10 +1,11 @@
 // packages
 import dotenv from 'dotenv';
 import express, { Express, Response, Request } from 'express';
+import 'module-alias/register';
 import multer from 'multer';
 
 // lib
-import { openai } from './lib/open-ai';
+import { openai } from '@lib/open-ai';
 
 // env
 dotenv.config();
